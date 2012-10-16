@@ -1,4 +1,61 @@
-<h3>Home</h3>
-<% @users.each do |user| %>
-  <p>User: <%=link_to user.name, user %></p>
-<% end %>
+<div class="row hero-unit">
+  <%= image_tag 'seattle_rb_logo_big.png', id: "hero-ruby", class: "span2" %>
+  <%= image_tag 'chocolate.jpg', id: "chocolate", class: "span2" %>
+  <div id='hero-text' class='span9'>
+    <h1>Beijing.Rubyist</h1>
+    <p>
+      Beijing.Rubyist was the ruby circle in Beijing to convene every weekends to contribute to open source, work on personal projects, and teach and learn from one another. All skill levels are welcome!
+    </p>
+    <a href="https://twitter.com/seattlerb" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @seattlerb</a>
+    <%= render "twitter" %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="span4">
+    <h2>Why Beijing.Rubyist?</h2>
+     <p>
+       The Ruby and Rails worlds are known for their collaboration, and Beijing.Rubyist takes an active role. We focus on fun and collaborate to solve problems. We provide each other support as we take on new challenges in Ruby. We're proud to be the home of some of the <%= link_to "best Ruby developers around", people_path %>. Check out <a href='http://www.youtube.com/watch?v=ICVdf4WidkY'>this video</a> about our humble beginnings.
+     </p>
+  </div>
+  <div class="span4">
+    <h2>How Can I Participate?</h2>
+    <p>
+      The Tuesday meet up is informal - drop in and code with us as you please. We also host larger, formal events on a semi-regular basis. We encourage everyone, from Ruby novice to expert, to join us to learn and contribute. We're excited to grow and support the Ruby and Rails communities!
+    </p>
+ </div>
+  <div class="span4">
+    <h2>Where Can I Get Help?</h2>
+    <p>
+      The nicest thing about our amazing members is the number of projects and resources we've helped grow! View our <%= link_to "projects", projects_path %>, join our <%= link_to "mailing list", join_us_path %>, follow us on <a href='http://twitter.com/seattlerb'>twitter</a>, and peruse or submit to our <%= link_to "Seattle jobs board", join_us_path %>.
+    </p>
+  </div>
+</div>
+
+<div class='row'>
+  <div id="map" class='span12'>
+    <div id="address" class='span4'>
+      <h1>Join Beijing.Rubyist</h1>
+      Come hack with us! We’re at Vivace Café every Tuesday from 7-9 p.m. Bring whatever you’re working on, grab a cup of coffee, and meet other Rubyists. Everyone is welcome!
+      <table>
+        <tr>
+          <td><i class='icon-time'></i></td>
+          <td><h3><time>7:00p</time> to <time>9:00p</time> Every Tuesday</h3></td>
+        </tr>
+        <tr>
+          <td><i class='icon-map-marker'></i></td>
+          <td>
+            <address>
+              <h3>Vivace Cafe</h3>
+              532 Broadway Ave E<br />
+              Seattle, WA 98102
+            </address>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class='span8'>
+      <iframe height="200" frameborder="" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;aq=&amp;sll=37.0635,-95.677068&amp;sspn=37.683309,86.220703&amp;ie=UTF8&amp;&amp;t=m&amp;cid=2732031702180546416&amp;ll=47.62381,-122.320662&amp;spn=0.012727,0.080509&amp;z=14&amp;iwloc=near&addr&amp;output=embed"></iframe>
+    </div>
+  </div>
+</div>
