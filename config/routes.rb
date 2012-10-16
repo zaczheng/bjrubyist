@@ -1,5 +1,7 @@
 Bjrubyist::Application.routes.draw do
   resources :events
+  resources :memberships, only: [:create, :destroy]
+
 
   authenticated :user do
     root :to => 'home#index'
