@@ -1,4 +1,6 @@
 Bjrubyist::Application.routes.draw do
+  resources :events
+
   authenticated :user do
     root :to => 'home#index'
   end
@@ -6,7 +8,6 @@ Bjrubyist::Application.routes.draw do
   devise_for :users
   resources :users
 
-  match "/event"   => "home#event", as: :event
   match "/people"   => "home#people", as: :people
   match "/projects" => "home#projects", as: :projects
   match "/join-us"  => "home#join_us", as: :join_us
