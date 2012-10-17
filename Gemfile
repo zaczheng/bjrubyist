@@ -23,3 +23,10 @@ gem "quiet_assets", ">= 1.0.1", :group => :development
 gem "hub", ">= 1.10.2", :require => nil, :group => [:development]
 gem "haml", ">= 3.1.7"
 gem "haml-rails", ">= 0.3.5", :group => :development
+
+#omniauth
+gem 'omniauth'
+gem 'omniauth-github'
+gem "omniauth-twitter"
+gem "omniauth-facebook"
+gem "omniauth-google-oauth2"
