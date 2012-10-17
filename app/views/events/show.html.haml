@@ -1,4 +1,3 @@
-%p#notice= notice
 %p
   %b Name:
   = @event.name
@@ -12,6 +11,5 @@
   %b Description:
   = @event.description
 = link_to 'Edit', edit_event_path(@event)
-|
-\#{link_to 'Back', events_path}
-\#{render 'join_form'}
+= link_to 'Back', events_path
+= render 'join_form'
