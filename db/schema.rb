@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121017030916) do
+ActiveRecord::Schema.define(:version => 20121020080320) do
 
   create_table "authorizations", :force => true do |t|
     t.string   "provider"
@@ -38,6 +38,14 @@ ActiveRecord::Schema.define(:version => 20121017030916) do
   end
 
   add_index "memberships", ["event_id", "member_id"], :name => "index_memberships_on_event_id_and_member_id", :unique => true
+
+  create_table "projects", :force => true do |t|
+    t.string   "name"
+    t.string   "url"
+    t.string   "creater"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "roles", :force => true do |t|
     t.string   "name"

@@ -1,4 +1,6 @@
 Bjrubyist::Application.routes.draw do
+  resources :projects
+
   resources :events
   resources :memberships, only: [:create, :destroy]
 
@@ -11,6 +13,6 @@ Bjrubyist::Application.routes.draw do
   resources :users
 
   match "/people"   => "home#people", as: :people
-  match "/projects" => "home#projects", as: :projects
+  #match "/projects" => "home#projects", as: :projects
   match "/join-us"  => "home#join_us", as: :join_us
 end
