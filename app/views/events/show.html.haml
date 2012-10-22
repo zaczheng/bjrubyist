@@ -10,6 +10,26 @@
 %p
   %b Description:
   = @event.description
+
+
 = link_to 'Edit', edit_event_path(@event)
 = link_to 'Back', events_path
 = render 'join_form'
+
+
+/ JiaThis Button BEGIN
+.jiathis_style
+  %span.jiathis_txt 分享到：
+  %a.jiathis_button_icons_1
+  %a.jiathis_button_icons_2
+  %a.jiathis_button_icons_3
+  %a.jiathis_button_icons_4
+  %a.jiathis.jiathis_txt.jtico.jtico_jiathis{:href => "http://www.jiathis.com/share", :target => "_blank"}
+  %a.jiathis_counter_style
+%script{:charset => "utf-8", :src => "http://v3.jiathis.com/code/jia.js?uid=1347460297972890", :type => "text/javascript"}
+/ JiaThis Button END
+
+/ UY BEGIN
+#uyan_frame
+%script#UYScript{:async => "", :src => "http://v1.uyan.cc/js/iframe.js?UYUserId=0", :type => "text/javascript"}
+/ UY END
