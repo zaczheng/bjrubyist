@@ -1,15 +1,22 @@
-h1. 北京Rubyist
+h1. Bjrubyist
 
-帮助北京的Ruby新手成长
-帮助北京的Ruby公司招聘
-帮助创业公司找到合作伙伴
-在这里我们可以一起贡献开源项目
-研究个人项目和互相切磋
-我们欢迎任何水平的rubyist参与我们的活动.
+This application was generated with the "rails_apps_composer":https://github.com/RailsApps/rails_apps_composer gem provided by the "RailsApps Project":http://railsapps.github.com/.
 
 h2. Diagnostics
 
+This application was built with recipes that are known to work together.
 
+This application was built with preferences that are known to work together.
+
+If the application doesn't work as expected, please "report an issue":https://github.com/RailsApps/rails_apps_composer/issues and include these diagnostics:
+
+We'd also like to know if you've found combinations of recipes or preferences that do work together.
+
+Recipes:
+["controllers", "core", "email", "extras", "frontend", "gems", "git", "init", "models", "prelaunch", "railsapps", "readme", "routes", "setup", "testing", "views"]
+
+Preferences:
+{:git=>true, :railsapps=>"rails3-bootstrap-devise-cancan", :database=>"sqlite", :unit_test=>"rspec", :integration=>"cucumber", :fixtures=>"factory_girl", :frontend=>"bootstrap", :bootstrap=>"sass", :email=>"gmail", :authentication=>"devise", :devise_modules=>"default", :authorization=>"cancan", :starter_app=>"admin_app", :form_builder=>"simple_form", :quiet_assets=>true, :dev_webserver=>"webrick", :templates=>"erb", :github=>true}
 
 h2. Ruby on Rails
 
@@ -26,7 +33,7 @@ This application uses SQLite with ActiveRecord.
 
 h2. Development
 
-* Template Engine: Haml
+* Template Engine: ERB
 * Testing Framework: RSpec and Factory Girl and Cucumber
 * Front-end Framework: Twitter Bootstrap (Sass)
 * Form Builder: SimpleForm
