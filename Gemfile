@@ -29,8 +29,5 @@ gem "haml-rails", ">= 0.3.5", :group => :development
 #omniauth
 gem 'omniauth'
 gem 'omniauth-github'
-gem "omniauth-twitter"
-gem "omniauth-facebook"
-gem "omniauth-google-oauth2"
 gem 'thin'
 gem "capistrano"
