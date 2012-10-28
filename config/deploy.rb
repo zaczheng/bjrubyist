@@ -15,7 +15,7 @@ set :deploy_to, "/sg552/apps/bjrubyist/"
 default_run_options[:pty] = true
 
 # change to your username
-set :user, "sg552"
+set :user, "wenyang"
 
 namespace :deploy do
   task :start do

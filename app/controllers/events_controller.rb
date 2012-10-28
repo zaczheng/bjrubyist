@@ -1,4 +1,8 @@
 class EventsController < ApplicationController
+  #raise an exception if the user is not able to perform the given action
+  load_and_authorize_resource
+
+
   # GET /events
   # GET /events.json
   def index
@@ -19,6 +23,7 @@ class EventsController < ApplicationController
       format.html # show.html.erb
       format.json { render json: @event }
     end
+
   end
 
   # GET /events/new

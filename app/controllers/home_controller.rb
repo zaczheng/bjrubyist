@@ -5,6 +5,5 @@ class HomeController < ApplicationController
   end
 
   def join_us
-  	
   end
 end

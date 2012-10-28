@@ -207,9 +207,9 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', :scope => 'user,public_repo'
   # These oauth key and secret are use for localhost. Please replace them if necessary
-   config.omniauth :github, 'a55eb780a5a66bc2fabe', 'b531490bdcc4fcbb3e05bdca2e75e60b8ad9ba12'
-   config.omniauth :facebook, "283956394958478", "fdfedf11fba5c4e77e87a748aad36cc9"
-   config.omniauth :google_oauth2, '950211539633-6sh58gmv2mc39jn8m6b6uo9i5po6qkjh.apps.googleusercontent.com', 'pvDaViwlfKROcMTxhauo76Gu'
+   config.omniauth :github, 'cfa176e6302d18bb3600', '6b85ce98030f11d19f58b7f637db9c7024bc0a11'
+   # config.omniauth :facebook, "283956394958478", "fdfedf11fba5c4e77e87a748aad36cc9"
+   # config.omniauth :google_oauth2, '950211539633-6sh58gmv2mc39jn8m6b6uo9i5po6qkjh.apps.googleusercontent.com', 'pvDaViwlfKROcMTxhauo76Gu'
    #config.omniauth :twitter, "xfOsUPR6WPYzs3EXBbrag", "jxWQdnKr0KnzteXZHbVaE2JtbE6PzuKjOs9PnkeEag"
 
   # ==> Warden configuration

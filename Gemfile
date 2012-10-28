@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 gem 'rails', '3.2.8'
-gem 'sqlite3'
+gem 'mysql2'
 group :assets do
   gem 'execjs'
   gem 'therubyracer'
@@ -29,8 +29,5 @@ gem "haml-rails", ">= 0.3.5", :group => :development
 #omniauth
 gem 'omniauth'
 gem 'omniauth-github'
-gem "omniauth-twitter"
-gem "omniauth-facebook"
-gem "omniauth-google-oauth2"
 gem 'thin'
 gem "capistrano"
