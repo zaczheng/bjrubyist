@@ -14,4 +14,10 @@ class Event < ActiveRecord::Base
 	  memberships.find_by_member_id(member.id)
 	end
 
+  #def info
+    #if name and location
+      #name + "---" + location
+    #end
+  #end
+
 end
