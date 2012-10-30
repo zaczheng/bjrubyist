@@ -30,9 +30,8 @@ If you add functionality to this application, create an alternative implementati
 
 ## Credits
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 ## License
 
 Copyright (c) 2012 "sundevilyang" Yang Wen
-Licensed under the MIT license.
+Dual licensed under the [MIT](http://www.opensource.org/licenses/mit-license.php) and [GPL](http://www.gnu.org/licenses/gpl.html) licenses.
