@@ -34,3 +34,6 @@ gem "capistrano"
 
 #calendar
 gem "watu_table_builder", :require => "table_builder"
+
+# for markdown support
+gem 'redcarpet'
