@@ -32,6 +32,5 @@ gem 'omniauth-github'
 gem 'thin'
 gem "capistrano"
 
-#gem 'mysql2'
 #calendar
 gem "watu_table_builder", :require => "table_builder"
