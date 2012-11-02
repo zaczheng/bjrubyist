@@ -6,7 +6,7 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    @events = Event.order("created_at desc")
+    @events = Event.order("date desc")
     @date = params[:month] ? Date.parse(params[:month]) : Date.today
 
     respond_to do |format|
