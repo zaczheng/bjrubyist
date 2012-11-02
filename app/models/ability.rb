@@ -3,7 +3,7 @@ class Ability
 
   def initialize(user)
     user ||= User.new # guest user (not logged in)
-    alias_action :update, :destroy, :to => :modify
+    alias_action :new, :update, :destroy, :to => :modify
     # can :modify, Comment
     if user.has_role? :admin
       can :manage, :all
