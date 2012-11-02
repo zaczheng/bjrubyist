@@ -29,8 +29,6 @@ namespace :deploy do
   end
 end
 
-
-
 #https://github.com/capistrano/capistrano/blob/master/lib/capistrano/recipes/deploy/assets.rb#L10
 # if have loaded 'deploy/assets', don't need the following
 
