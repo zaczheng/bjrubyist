@@ -76,3 +76,6 @@ pickle-email-*.html
 # vim artifacts
 **.swp
 public/assets/
+
+# ctags file
+tags
