@@ -32,11 +32,11 @@ end
 #https://github.com/capistrano/capistrano/blob/master/lib/capistrano/recipes/deploy/assets.rb#L10
 # if have loaded 'deploy/assets', don't need the following
 
-# namespace :assets do
-#   task :precompile do
-#     run "cd #{release_path} && bundle exec rake RAILS_ENV=production RAILS_GROUPS=assets assets:precompile "
-#   end
-# end
+ namespace :assets do
+   task :precompile do
+     run "cd #{release_path} && bundle exec rake RAILS_ENV=production RAILS_GROUPS=assets assets:precompile "
+   end
+ end
 
 desc "Copy database.yml to release_path"
   task :cp_database_yml do
