@@ -1,20 +1,6 @@
 
 %h1 Listing Events
 
-#calendar
-  %h2#month
-    = link_to "<", :month => (@date.beginning_of_month-1)
-    = h @date.strftime("%B %Y")
-    = link_to ">", :month => (@date.end_of_month+1)
-  = calendar_for @events, :year => @date.year, :month => @date.month do |calendar|
-    = calendar.head('周日', '周一', '周二', '周三', '周四', '周五', '周六')
-    - calendar.day(:day_method => :date) do |date, events|
-      = date.day
-      %ul
-        - for event in events
-          %li= link_to truncate(event.name, :length => 20), event
-%br/
-%br/
 
 %table.table.table-hover
   %tr
@@ -33,5 +19,22 @@
       - if can? :edit, :destroy, event
         %td= link_to 'Edit', edit_event_path(event)
         %td= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' }
+
 %br/
-= link_to 'New Event', new_event_path
+- if can? :modify, @event
+  .btn.btn-primary= link_to 'New Event', new_event_path
+
+#calendar
+  %h2#month
+    = link_to "<", :month => (@date.beginning_of_month-1)
+    = h @date.strftime("%B %Y")
+    = link_to ">", :month => (@date.end_of_month+1)
+  = calendar_for @events, :year => @date.year, :month => @date.month do |calendar|
+    = calendar.head('周日', '周一', '周二', '周三', '周四', '周五', '周六')
+    - calendar.day(:day_method => :date) do |date, events|
+      = date.day
+      %ul
+        - for event in events
+          %li= link_to truncate(event.name, :length => 20), event
+%br/
+%br/

@@ -2,7 +2,7 @@
   /
     <haml:loud> image_tag 'logo_big.png', id: &quot;hero-ruby&quot;, class: &quot;span2&quot; </haml:loud>
   #hero-text.span9
-    %h1 北京Rubyist
+    %h1 冲出北京 走向世界
     %br
     %p
       Hi 北京Rubyists，
@@ -41,6 +41,7 @@
       %h1 Join 北京Rubyist
       / Come hack with us! 北京市东直门国华投资大厦11层ThoughtWorks Office，地铁环线西南 出口直行50米即到. Everyone is welcome!
       %table
+      -if @event
         %tr
           %td
             %i.icon-time
@@ -61,7 +62,10 @@
               / %br/
               / 国华投资大厦11层
               / %br/
-              
+        -else
+        %tr
+          %td
+            %h4 暂无活动 ...
     .span8
       %iframe{:frameborder => "0", :height => "350", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "https://maps.google.com/maps?q=ThoughtWorks%E6%80%9D%E7%89%B9%E6%B2%83%E5%85%8B%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF%E5%8C%97%E4%BA%AC%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&hl=en&ie=UTF8&cid=6987603576348446125&gl=US&hq=ThoughtWorks%E6%80%9D%E7%89%B9%E6%B2%83%E5%85%8B%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF%E5%8C%97%E4%BA%AC%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&t=m&hnear=&iwloc=A&ll=39.939702,116.432934&spn=0.00997,0.017552&output=embed", :width => "425"}
       %br/

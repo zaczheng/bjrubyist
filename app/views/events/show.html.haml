@@ -9,9 +9,9 @@
   = @event.location
 %p
   %b Description:
-  = @event.description
+  = markdown(@event.description)
 
-- if can? :edit, @event
+- if can? :modify, @event
   = link_to 'Edit', edit_event_path(@event)
 = link_to 'Back', events_path
 = render 'join_form'

@@ -9,7 +9,7 @@
 %p
   %b Creater:
   = @project.creater
-
-= link_to 'Edit', edit_project_path(@project)
-\|
+- if can? :modify, @project
+  = link_to 'Edit', edit_project_path(@project)
+%br
 = link_to 'Back', projects_path
